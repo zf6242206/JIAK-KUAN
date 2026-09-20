@@ -5,32 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 156.67.63.231
-  port: 443
+  server: 104.17.169.13
+  port: 2053
   udp: true
   type: vless
-  uuid: b052df40-d51c-456c-9bd6-57af01a87e4e
-  flow: xtls-rprx-vision
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
   tls: true
-  reality-opts:
-    public-key: PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI
-    short-id: 5606d4a25c99e7af
-  servername: sync-bridge.org
+  servername: inDeX.HaRMONiCA01.WORkers.DeV
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /axch1mttbxz2k55y01
+    headers:
+      Host: inDeX.HaRMONiCA01.WORkers.DeV
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: 170.168.97.8
-  port: 8443
+  server: max.karmatel.ir
+  port: 55519
   udp: true
   type: vless
-  uuid: 96b44347-cac5-cfae-383b-1724ae9b5aec
-  tls: true
-  reality-opts:
-    public-key: D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs
-  servername: download.nvidia.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
+  uuid: d10191ad-1671-496e-b0cb-be5a28d0739a
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: play-apps-features.googleusercontent.com
 proxy-groups:
 - name: PROXIES
   type: select
