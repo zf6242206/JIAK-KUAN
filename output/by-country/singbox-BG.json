@@ -18,21 +18,44 @@
     {
       "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe",
-      "server": "prep.wwwinternetvideo.click",
+      "server": "45.9.156.103",
       "server_port": 443,
-      "uuid": "1c332eae-7e02-4acd-996d-4eb3e652401c",
+      "uuid": "e633de28-bfc0-4aca-aa67-e2e12e2c9e58",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "yandex.ru",
+        "server_name": "mzone.bg.3cloudhost.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM",
-          "short_id": "bbe46bd8f6b96839"
+          "public_key": "SARDrN_d46PsugT2k5ILoQAJqaA1eCOZhe1BjKMonj8",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe",
+      "server": "108.165.233.223",
+      "server_port": 443,
+      "uuid": "2388e166-3890-33ae-f77e-efac00000001",
+      "tls": {
+        "enabled": true,
+        "server_name": "netlivpn4813.ddhshhshs.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN",
+        "headers": {
+          "Host": "netlivpn4813.ddhshhshs.workers.dev"
         }
       }
     },
@@ -42,7 +65,8 @@
       "outbounds": [
         "auto",
         "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe",
-        "🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe"
+        "🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe",
+        "🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe"
       ]
     },
     {
@@ -50,7 +74,8 @@
       "tag": "auto",
       "outbounds": [
         "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe",
-        "🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe"
+        "🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe",
+        "🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

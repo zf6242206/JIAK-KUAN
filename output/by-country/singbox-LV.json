@@ -4,35 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe",
-      "server": "185.135.86.175",
-      "server_port": 9036,
-      "method": "aes-256-cfb",
-      "password": "hbtvgUz5uNYyB3Rf"
-    },
-    {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe",
-      "server": "46.243.142.227",
-      "server_port": 10443,
-      "uuid": "a85ddf9f-329b-4c31-a80a-cd0f2e5b2a30",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe",
+      "server": "104.25.217.189",
+      "server_port": 443,
+      "uuid": "7a657573-627d-c5d7-4e7b-9e260f5cfff1",
       "tls": {
         "enabled": true,
-        "server_name": "shprcdn.quest",
+        "server_name": "imzajnekupas.a3-60-morteza.workers.dev",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "KoNQ52irUOW-fybKx-gUKCuHpMnHhgQ_skjd8TmqJ2k",
-          "short_id": ""
+          "fingerprint": "ios"
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "google.storage.v2.Storage"
+        "type": "ws",
+        "path": "/stream/PANEL_ZEUS/9e260f5cfff1/loc-0",
+        "headers": {
+          "Host": "imzajnekupas.a3-60-morteza.workers.dev"
+        }
       }
     },
     {
@@ -40,16 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe"
+        "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe"
+        "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
