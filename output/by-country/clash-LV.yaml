@@ -5,20 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
-  server: 104.25.217.189
-  port: 443
+  server: 185.135.86.175
+  port: 9017
   udp: true
-  type: vless
-  uuid: 7a657573-627d-c5d7-4e7b-9e260f5cfff1
-  tls: true
-  servername: imzajnekupas.a3-60-morteza.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: ios
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/9e260f5cfff1/loc-0
-    headers:
-      Host: imzajnekupas.a3-60-morteza.workers.dev
+  type: ss
+  cipher: aes-256-cfb
+  password: HAVAdE3nXhqA5nHp
 proxy-groups:
 - name: PROXIES
   type: select
