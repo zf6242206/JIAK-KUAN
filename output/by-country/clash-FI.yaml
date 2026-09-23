@@ -5,67 +5,61 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 152.233.54.104
+  server: 2.27.175.71
   port: 443
   udp: true
   type: vless
-  uuid: ddf09ad0-02dc-485b-9048-1038de5bebf0
+  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
   tls: true
-  reality-opts:
-    public-key: V4SeM4OMxXoSKBmmyC5C0kZEhgL33a5vVZBe7ysJ42U
-    short-id: 0a30e2aee95a7571
-  servername: fi1.cache-4d8a.com
-  client-fingerprint: chrome
+  servername: assets-fi.pleiades.codes
+  skip-cert-verify: false
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
-    grpc-service-name: grpc
+    grpc-service-name: cdn.v1.AssetService
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 95.216.27.15
-  port: 2053
+  server: 193.23.201.65
+  port: 5432
   udp: true
   type: vless
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  uuid: e84e0918-68ca-4fcc-a1d1-b566fd9ac7ee
+  flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: random
+  servername: 193.23.201.65
+  skip-cert-verify: false
+  client-fingerprint: safari
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 95.217.24.119
-  port: 2087
+  server: iq5ny.pleiades.codes
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  sni: iq5ny.pleiades.codes
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  server: 62.60.229.124
+  port: 8443
   udp: true
   type: vless
-  uuid: ddc0bc7e-04c6-4ff9-9adb-c68c71606e8f
+  uuid: 5b754a1a-11aa-4df9-a8ba-44af9a579fe1
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: _FKzdndiMfCSU5YLVXSBqzk2lIG0W2-DauFpos684Uc
-    short-id: e9fae729e40ae07e
-  servername: 62.238.103.54
+    public-key: MjRaYQ5TjfU2rfHxVQ2Sa4nXRHHvsMvi3DW-x09n8Ts
+  servername: finland.b2ai.top
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 87.58.148.70
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: rg0g3xp9rk9nk9o0
 - name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  server: 148.135.185.21
-  port: 8445
+  server: 31.76.80.230
+  port: 8443
   udp: true
   type: vless
-  uuid: e5d73666-1ac5-49fc-8e4d-5c8cad769588
+  uuid: d544c858-b1ba-45b2-8868-8197daf2a6ee
   tls: true
-  reality-opts:
-    public-key: _UazRMiBq9RqMaVrHeLsvUuoBkGFo9Gm-A4ivuZ6ZS8
-    short-id: 6ba85179e30d4fc2
-  servername: hetzner.com
-  client-fingerprint: safari
-  network: grpc
-  grpc-opts:
-    grpc-service-name: Google
+  servername: fin.luxes.network
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assets
 proxy-groups:
 - name: PROXIES
   type: select
