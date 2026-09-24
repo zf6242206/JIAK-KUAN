@@ -5,17 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  server: 143.246.194.213
-  port: 443
+  server: 172.238.244.13
+  port: 17000
   udp: true
-  type: vless
-  uuid: dc9e93bc-b53a-11f1-91d3-52540030ba36
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
-  servername: www.ikea.com
-  client-fingerprint: safari
+  type: ss
+  cipher: aes-256-gcm
+  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   server: 143.246.194.60
   port: 8081
@@ -25,13 +20,6 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-test
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: se1.auronvpn.site
-  port: 1443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: N2YzM
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,7 +27,6 @@ proxy-groups:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -47,6 +34,5 @@ proxy-groups:
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
 rules:
 - MATCH,PROXIES
