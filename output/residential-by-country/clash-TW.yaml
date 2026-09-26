@@ -5,19 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  server: 24864168545164.oylfmxz.cn
-  port: 443
+  server: namrcg001640lrm.cybervena.com
+  port: 50099
   udp: true
-  type: vmess
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: 24864168545164.oylfmxz.cn
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: a9a0d092-6f0e-4701-81ee-454643d6d506
 proxy-groups:
 - name: PROXIES
   type: select
