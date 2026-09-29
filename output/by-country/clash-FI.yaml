@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
+  server: 144.31.212.253
+  port: 443
+  udp: true
+  type: hysteria2
+  password: cf83b611-6cba-4535-adcb-8da06c6a9146
+  sni: vps155-edge.kermemehori.ru
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: est1313.ggisopi.su
   port: 443
   udp: true
@@ -15,22 +23,20 @@ proxies:
   reality-opts:
     public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
   servername: est1313.ggisopi.su
-  client-fingerprint: safari
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 87.120.107.246
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  server: 153.52.117.131
   port: 443
   udp: true
   type: vless
-  uuid: 10b78ac4-d4ce-43d2-98c4-c62c96fcbdc2
+  uuid: 3d9daa27-6283-406d-a2d4-c6f22c635a14
   tls: true
-  reality-opts:
-    public-key: 20kKpOl77grCupOod4O_X1u74fJT38yc2Nhxy8enywc
-    short-id: fd4f9db207ff64db
-  servername: dl.google.com
-  client-fingerprint: random
+  servername: fi.astrafic.ru
+  skip-cert-verify: false
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
-    grpc-service-name: grpc-tunnel_nl
+    grpc-service-name: vless-grpc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -38,6 +44,7 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -45,5 +52,6 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
 rules:
 - MATCH,PROXIES
