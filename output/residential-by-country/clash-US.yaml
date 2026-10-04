@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
-  server: trackydev.site
+- name: 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
+  server: 104.24.30.89
   port: 443
   udp: true
   type: vless
-  uuid: 92d67828-4c56-4795-af5a-f387651380dc
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
   tls: true
-  servername: trackydev.site
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
   skip-cert-verify: false
-  client-fingerprint: random
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: trackydev.site
+      Host: rayan-007.nastaran.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
 rules:
 - MATCH,PROXIES

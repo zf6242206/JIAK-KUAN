@@ -5,24 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe",
-      "server": "trackydev.site",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe",
+      "server": "latinki.pumpkinpie.study",
       "server_port": 443,
-      "uuid": "92d67828-4c56-4795-af5a-f387651380dc",
+      "uuid": "8f6e49e6-7f03-4f10-9da9-1716158d80ed",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "trackydev.site",
-        "insecure": false,
+        "server_name": "latinki.pumpkinpie.study",
         "utls": {
           "enabled": true,
           "fingerprint": "random"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "trackydev.site"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wHTq_owme8N6237B37GhneBcNJQtzRdIFouRkSscgnQ",
+          "short_id": "40fac5d64bc6a540"
         }
       }
     },
@@ -31,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe"
+        "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe"
+        "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
