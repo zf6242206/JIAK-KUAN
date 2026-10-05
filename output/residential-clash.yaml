@@ -4,51 +4,37 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
-  server: 104.24.30.89
-  port: 443
-  udp: true
-  type: vless
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
-  tls: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rayan-007.nastaran.dpdns.org
-- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
-  server: tutaim.azad0namah.ir
-  port: 8080
-  udp: true
-  type: vless
-  uuid: fdc1206a-9d2e-42b7-b615-9ccea8cf70ee
-- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe
-  server: test.keoplentuio.xyz
+- name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
+  server: 212.74.39.235
   port: 2053
   udp: true
   type: vless
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
-  server: 33632b49-tmm5c0-tonrmx-8n27.nw4.hyhuawei.com
-  port: 443
+- name: 🇯🇵 日本 (Japan) 02 (家宽) - xiaohe
+  server: 116.204.164.60
+  port: 7443
+  udp: true
+  type: vless
+  uuid: c676be7d-b481-4bba-88d0-65855e09dc67
+  tls: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 03 (家宽) - xiaohe
+  server: s3.huhiuh.space
+  port: 18642
   udp: true
   type: hysteria2
-  password: 5dc6fa05-a601-aba6-7761-ecde22d2b0fc
-  sni: 33632b49-tmm5c0-tonrmx-8n27.nw4.hyhuawei.com
+  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
+  sni: www.bing.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaohe
-  server: aac08668-tmm5c0-tw661e-1isea.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: d6abdbda-fe9d-11ec-bb74-f23c9164ca5d
-  sni: aac08668-tmm5c0-tw661e-1isea.hk3.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
-  server: argo6.5671234.xyz
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+  server: 104.20.36.205
   port: 443
   udp: true
   type: vless
@@ -61,40 +47,38 @@ proxies:
     path: /e8e2cecb6188f7fb
     headers:
       Host: argo6.5671234.xyz
-- name: 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaohe
-  server: hinet1.2yly.com
-  port: 24215
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
+  server: tw1.dexlos.com
+  port: 8080
   udp: true
-  type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
+  type: tuic
+  uuid: D7286728-678E-443B-B76B-B699654C66DD
+  password: D7286728-678E-443B-B76B-B699654C66DD
+  sni: tw1.dexlos.com
+  skip-cert-verify: true
+  congestion-controller: bbr
+  udp-relay-mode: native
+  alpn:
+  - h3
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 02 (家宽) - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 03 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 02 (家宽) - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 03 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
