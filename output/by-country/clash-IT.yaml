@@ -12,18 +12,18 @@ proxies:
   uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
 - name: 🇮🇹 意大利 (Italy) 02 - xiaohe
   server: 91.201.65.122
-  port: 9039
+  port: 9074
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: qYEN5HX4JKeVCdEC
+  password: p5wSkb2uM3pKSS3j
 - name: 🇮🇹 意大利 (Italy) 03 - xiaohe
-  server: 91.201.65.122
-  port: 9097
+  server: 57.131.48.45
+  port: 8388
   udp: true
   type: ss
-  cipher: aes-256-cfb
-  password: Sn5B7jTqr76aCJT8
+  cipher: aes-256-gcm
+  password: itzvpn@321
 proxy-groups:
 - name: PROXIES
   type: select
