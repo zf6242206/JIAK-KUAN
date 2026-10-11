@@ -4,31 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇪 比利时 (Belgium) 01 - xiaohe
-  server: 172.67.134.136
-  port: 443
+- name: 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
+  server: 172.66.47.45
+  port: 2083
   udp: true
   type: vless
-  uuid: fa45096d-bed0-ad80-c773-23c300000003
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  servername: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
+  servername: wk1.f1w.de5.net
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
+      Host: wk1.f1w.de5.net
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇪 比利时 (Belgium) 01 - xiaohe
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇪 比利时 (Belgium) 01 - xiaohe
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
 rules:
 - MATCH,PROXIES
