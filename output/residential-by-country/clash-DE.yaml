@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
-  server: 172.67.67.178
-  port: 443
+- name: 🇩🇪 德国 (Germany) 01 (家宽) - xiaohe
+  server: 209.38.238.229
+  port: 20202
   udp: true
   type: vless
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
   tls: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  servername: wzs.echo.net.eu.org
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=
     headers:
-      Host: rAyAn-007.nAsTaRaN.DpDnS.OrG
+      Host: wzs.echo.net.eu.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
+  - 🇩🇪 德国 (Germany) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
+  - 🇩🇪 德国 (Germany) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
