@@ -19,8 +19,6 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-    headers:
-      Host: 5.253.29.254
 - name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
   server: 5.253.28.240
   port: 2443
@@ -36,19 +34,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: rex-eb0bf76b710ce763
-- name: 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe
-  server: 5.253.28.240
-  port: 40443
-  udp: true
-  type: vless
-  uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
-    short-id: 88b6
-  servername: deepl.com
-  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -57,7 +42,6 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -66,6 +50,5 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
-  - 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe
 rules:
 - MATCH,PROXIES
