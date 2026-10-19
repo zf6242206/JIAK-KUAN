@@ -5,26 +5,26 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇩🇰 丹麦 (Denmark) 01 - xiaohe",
-      "server": "193.233.253.180",
-      "server_port": 8444,
-      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
+      "server": "45.145.12.148",
+      "server_port": 443,
+      "uuid": "b869a8d0-0733-4346-8d1c-c1230a78651c",
       "tls": {
         "enabled": true,
-        "server_name": "github.com",
+        "server_name": "max.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-          "short_id": "457fab2ac885dbe0"
+          "public_key": "OOI0p2vKjr8xdwcVCzxcd3rAxmMr7XRA0wMk14IXaFM",
+          "short_id": "35debf0dc757d053"
         }
       },
       "transport": {
         "type": "grpc",
-        "service_name": "GunService"
+        "service_name": "grpc"
       }
     },
     {
@@ -32,14 +32,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇰 丹麦 (Denmark) 01 - xiaohe"
+        "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇰 丹麦 (Denmark) 01 - xiaohe"
+        "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
