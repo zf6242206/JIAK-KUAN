@@ -23,38 +23,32 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-    headers:
-      Host: 185.253.116.33
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  server: 144.31.135.38
-  port: 9444
+  server: 80.240.18.227
+  port: 10051
   udp: true
   type: vless
-  uuid: 01c96414-9fcd-4f79-9274-2c8d8045e48d
+  uuid: d161dcf1-fde2-44cc-b08d-d8944895e842
   tls: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /@Marisa_kristi
     headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
 - name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  server: 147.45.42.73
-  port: 20443
+  server: 95.174.68.188
+  port: 14430
   udp: true
   type: vless
-  uuid: f293db4d-7ab1-4faf-bb15-89540d8709cb
-  tls: true
-  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /vless
     headers:
-      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+      Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
   server: 84.235.244.108
   port: 22573
