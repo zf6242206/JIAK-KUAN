@@ -5,18 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  server: 13.143.239.119
+  server: 79.98.37.106
   port: 443
   udp: true
   type: vless
-  uuid: f36c82e2-e33e-4054-960a-34619d9fdd5b
+  uuid: 846cedee-2a52-0001-a0b9-11850ead6a8b
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: kYbLeoF13TKNPtlYwRsAqFQR3l7v6NMe6ydARMIfEC0
-    short-id: 7230e3b3f137543c
-  servername: www.transip.nl
-  client-fingerprint: firefox
+    public-key: USSepsAbvP9LpByHLV2xD2H8dq8GAJ6G0fINEqD4PAw
+  servername: ee-central.v8x2b.lol
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
