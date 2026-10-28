@@ -5,12 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
-  server: site.teslamotor.site
+  server: 168.222.43.53
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+  server: 155.117.5.208
   port: 20001
   udp: true
   type: vless
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
   server: 2.26.6.1
   port: 2087
   udp: true
@@ -20,19 +26,6 @@ proxies:
   servername: 2.26.6.1
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  server: 77.232.135.141
-  port: 8445
-  udp: true
-  type: vless
-  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
-  tls: true
-  servername: ru1.radiolumens.uk
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: beru-pl
 - name: 🇵🇱 波兰 (Poland) 04 - xiaohe
   server: 54.37.131.126
   port: 80
