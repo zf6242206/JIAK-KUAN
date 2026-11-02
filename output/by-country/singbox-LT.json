@@ -5,21 +5,27 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
-      "server": "a736eb68-tmb1c0-tpkh0c-1r7od.hk2.hyhuawei.com",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe",
+      "server": "185.178.208.167",
       "server_port": 443,
-      "uuid": "6d56436c-150d-11f0-b0c8-f23c913c8d2b",
+      "uuid": "2232d904-8e6a-4202-8240-6efd8aec02e9",
       "tls": {
         "enabled": true,
-        "server_name": "download.windowsupdate.com",
+        "server_name": "lorettmay.top",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo",
-          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/blog/posts",
+        "headers": {
+          "Host": "lorettmay.top"
         }
       }
     },
@@ -28,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe"
+        "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe"
+        "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
