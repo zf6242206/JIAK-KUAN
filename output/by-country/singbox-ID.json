@@ -5,22 +5,17 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe",
-      "server": "194.150.220.179",
-      "server_port": 443,
-      "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
+      "server": "130.94.95.198",
+      "server_port": 57353,
+      "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
       "tls": {
         "enabled": true,
-        "server_name": "nl4.japancase.site",
+        "server_name": "in001.zestapp778.com",
+        "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "lXCVb-MY5dJqMUw6xvkuPbi0idyfF-OkSY_6GpOovVI",
-          "short_id": "9f05c35b73b47d53"
+          "fingerprint": "firefox"
         }
       }
     },
@@ -29,14 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe"
+        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe"
+        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
