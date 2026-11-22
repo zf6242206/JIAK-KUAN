@@ -46,21 +46,62 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 03 - xiaohe",
-      "server": "103.88.243.142",
-      "server_port": 11592,
-      "password": "41edb44c8e",
+      "server": "37.235.247.81",
+      "server_port": 8443,
+      "uuid": "2ae0670d-0bdf-409e-9a55-4e970252d378",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "srv-17e124.21freedom.net",
-        "insecure": true
+        "server_name": "apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": "6ba85179e30d4fc2"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 04 - xiaohe",
-      "server": "200.169.179.233",
+      "server": "168.113.253.178",
+      "server_port": 443,
+      "uuid": "d6d40100-9442-0001-b5b9-6d259318c421",
+      "tls": {
+        "enabled": true,
+        "server_name": "uzndiuvzvqqljdyhzs.fcloudservices.site",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - xiaohe",
+      "server": "168.113.253.178",
+      "server_port": 443,
+      "uuid": "608172ed-68e4-0001-85dc-f92c25d0eb92",
+      "tls": {
+        "enabled": true,
+        "server_name": "uzndiuvzvqqljdyhzs.fcloudservices.site",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - xiaohe",
+      "server": "201.51.12.98",
       "server_port": 443,
       "uuid": "38308ff1-5aa9-494f-a25a-0f2870d56b3e",
       "tls": {
@@ -79,63 +120,51 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - xiaohe",
-      "server": "81.163.22.109",
-      "server_port": 443,
-      "uuid": "6b70d4ce-4bea-0001-a343-b852a792e69b",
-      "tls": {
-        "enabled": true,
-        "server_name": "jissa-ru-wl-47sel.my-fade.cloud",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06 - xiaohe",
-      "server": "168.113.254.183",
-      "server_port": 443,
-      "uuid": "d55c6261-bc30-0001-8cae-fe82530e4c34",
-      "tls": {
-        "enabled": true,
-        "server_name": "xykmh-ru-70sb.my-fade.cloud",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 07 - xiaohe",
-      "server": "122.8.93.4",
-      "server_port": 8443,
-      "uuid": "4fabeed0-790e-9724-8f12-138ed31ac60e",
+      "server": "168.113.253.178",
+      "server_port": 443,
+      "uuid": "58708e38-dd5a-0001-902d-93621ee2bd83",
       "tls": {
         "enabled": true,
-        "server_name": "www.epson.com",
+        "server_name": "uzndiuvzvqqljdyhzs.fcloudservices.site",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "-GbQJg3bnEGEVFjVaRRu01cgF1f0K_maI4d5MWtMb28",
-          "short_id": ""
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
       }
     },
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 08 - xiaohe",
+      "server": "168.113.253.178",
+      "server_port": 443,
+      "uuid": "eb88bb1a-7bf0-0001-b9cd-4f97c89f0e9b",
+      "tls": {
+        "enabled": true,
+        "server_name": "uzndiuvzvqqljdyhzs.fcloudservices.site",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 09 - xiaohe",
+      "server": "srv-17e124.21freedom.net",
+      "server_port": 11592,
+      "password": "41edb44c8e",
+      "tls": {
+        "enabled": true,
+        "server_name": "srv-17e124.21freedom.net",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 10 - xiaohe",
       "server": "xssite.webredirect.org",
       "server_port": 443,
       "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
@@ -154,6 +183,29 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 11 - xiaohe",
+      "server": "185.178.208.167",
+      "server_port": 443,
+      "uuid": "ffb2c504-2c6c-49f3-b4bd-9fd3ff6ce454",
+      "tls": {
+        "enabled": true,
+        "server_name": "unlik.club",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/static/telemetry/3c9aaef00005/",
+        "headers": {
+          "Host": "tochkacdn.top"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -165,7 +217,10 @@
         "🇷🇺 俄罗斯 (Russia) 05 - xiaohe",
         "🇷🇺 俄罗斯 (Russia) 06 - xiaohe",
         "🇷🇺 俄罗斯 (Russia) 07 - xiaohe",
-        "🇷🇺 俄罗斯 (Russia) 08 - xiaohe"
+        "🇷🇺 俄罗斯 (Russia) 08 - xiaohe",
+        "🇷🇺 俄罗斯 (Russia) 09 - xiaohe",
+        "🇷🇺 俄罗斯 (Russia) 10 - xiaohe",
+        "🇷🇺 俄罗斯 (Russia) 11 - xiaohe"
       ]
     },
     {
@@ -179,7 +234,10 @@
         "🇷🇺 俄罗斯 (Russia) 05 - xiaohe",
         "🇷🇺 俄罗斯 (Russia) 06 - xiaohe",
         "🇷🇺 俄罗斯 (Russia) 07 - xiaohe",
-        "🇷🇺 俄罗斯 (Russia) 08 - xiaohe"
+        "🇷🇺 俄罗斯 (Russia) 08 - xiaohe",
+        "🇷🇺 俄罗斯 (Russia) 09 - xiaohe",
+        "🇷🇺 俄罗斯 (Russia) 10 - xiaohe",
+        "🇷🇺 俄罗斯 (Russia) 11 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

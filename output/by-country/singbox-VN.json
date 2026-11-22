@@ -13,20 +13,20 @@
     {
       "type": "vless",
       "tag": "🇻🇳 越南 (Vietnam) 02 - xiaohe",
-      "server": "kir3.crackerbinam.org",
-      "server_port": 56026,
-      "uuid": "a1f0cbb8-c74a-4c27-b881-7b14d96aece1",
+      "server": "38.60.230.151",
+      "server_port": 443,
+      "uuid": "3a1c6827-72a1-4d1c-9413-44109ff815f4",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "navi.bankrate.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "gjOKbmRb5cGDPbdz3x8xkBFL43pn3xqL-I6sALHO7ls",
-          "short_id": "99676967e6867063"
+          "public_key": "UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc",
+          "short_id": "2da72ce6"
         }
       }
     },
