@@ -4,45 +4,50 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
-      "server": "217.30.10.70",
-      "server_port": 9037,
-      "method": "aes-256-cfb",
-      "password": "TN2YqghxeFDKZfLU"
-    },
-    {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
-      "server": "171.22.129.227",
+      "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
+      "server": "188.225.56.100",
       "server_port": 443,
-      "uuid": "42c83523-9f96-41b2-82d6-2edb71a4ac19",
-      "flow": "xtls-rprx-vision",
+      "uuid": "b432a23a-acff-425c-bf69-70480cd6ed09",
       "tls": {
         "enabled": true,
-        "server_name": "nujd35aknu.static-mirror.site",
+        "server_name": "e2.cdnwh.icu",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "fJnm6-PhJGSwHaAdJOzXkYOfCPPCWSlaZrtfm1XsqhA",
-          "short_id": ""
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/stream/segment/3078a41dd7eb/",
+        "headers": {
+          "Host": "e2.cdnwh.icu"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 03 - xiaohe",
-      "server": "92.63.189.39",
-      "server_port": 8443,
-      "uuid": "7aa77858-f235-44d6-9434-7ab060848b17",
+      "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
+      "server": "82.118.22.161",
+      "server_port": 443,
+      "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "avelon.onl",
-        "insecure": false
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E",
+          "short_id": "fa3ea655619a3e78"
+        }
       }
     },
     {
@@ -51,8 +56,7 @@
       "outbounds": [
         "auto",
         "🇵🇱 波兰 (Poland) 01 - xiaohe",
-        "🇵🇱 波兰 (Poland) 02 - xiaohe",
-        "🇵🇱 波兰 (Poland) 03 - xiaohe"
+        "🇵🇱 波兰 (Poland) 02 - xiaohe"
       ]
     },
     {
@@ -60,8 +64,7 @@
       "tag": "auto",
       "outbounds": [
         "🇵🇱 波兰 (Poland) 01 - xiaohe",
-        "🇵🇱 波兰 (Poland) 02 - xiaohe",
-        "🇵🇱 波兰 (Poland) 03 - xiaohe"
+        "🇵🇱 波兰 (Poland) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
