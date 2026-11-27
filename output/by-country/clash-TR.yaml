@@ -4,28 +4,27 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  server: 94.159.98.82
-  port: 2053
+- name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  server: 143.246.136.128
+  port: 50738
   udp: true
   type: vless
-  uuid: fbe22815-0718-4eae-816f-e91c67d15b54
-  flow: xtls-rprx-vision
+  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
   tls: true
-  servername: 94.159.98.82
+  servername: turkey-ip1.mmdaqaorg.xyz
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
 rules:
 - MATCH,PROXIES
